@@ -7,22 +7,54 @@ const Navbar = () => {
     <nav className="flex justify-between items-center fixed z-10 top-0 w-full px-8 text-sm font-light">
       <ul className="flex items-center gap-3">
         <li className="font-semibold text-lg">
-          <NavLink to="/">Start</NavLink>
+          <NavLink to="/">Store</NavLink>
         </li>
         <li>
           <NavLink
-            to="/item1"
+            to="/all"
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            Item 1
+            All
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/item2"
+            to="/clothes"
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            item 2
+            Clothes
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/electronics"
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            Electronics
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/furnitures"
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            Furnitures
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/toys"
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            Toys
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/others"
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            Others
           </NavLink>
         </li>
       </ul>
@@ -31,18 +63,18 @@ const Navbar = () => {
         <li className="text-black/60">test@gmail.com</li>
         <li>
           <NavLink
-            to="/item-a"
+            to="/my-orders"
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            Item A
+            My Orders
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/item-b"
+            to="/my-account"
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            item B
+            My Account
           </NavLink>
         </li>
         <li> 🛒 0</li>
