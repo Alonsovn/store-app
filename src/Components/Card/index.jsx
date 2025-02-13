@@ -28,9 +28,9 @@ const Card = (data) => {
         </span>
         <img
           className="w-full h-full object-cover rounded-lg"
-          src={data.data.images[0]}
+          src={JSON.parse(data.data.images)}
           alt={data.data.title}
-        ></img>
+        />
         <div
           className="absolute top-0 right-0 flex justify-center items-center bg-white w-6 h-6 rounded-full m-2 p-1"
           onClick={(event) => addProductToCart(event, data.data)}
