@@ -17,7 +17,8 @@ const OrderCard = (props) => {
         <figure className="w-20 h-20">
           <img
             className="w-full h-full rounded-lg object-cover"
-            src={JSON.parse(imageUrl)}
+            // src={JSON.parse(imageUrl)}
+            src={imageUrl}
             alt={title}
           />
         </figure>

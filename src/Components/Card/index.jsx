@@ -54,7 +54,8 @@ const Card = (data) => {
         </span>
         <img
           className="w-full h-full object-cover rounded-lg"
-          src={JSON.parse(data.data.images)}
+          // src={JSON.parse(data.data.images)}
+          src={data.data.images}
           alt={data.data.title}
         />
 
