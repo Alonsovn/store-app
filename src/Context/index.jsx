@@ -1,3 +1,4 @@
+import { use } from "react";
 import { createContext, useState } from "react";
 
 const ShoppingCartContext = createContext();
@@ -22,6 +23,9 @@ const ShoppingCartProvider = ({ children }) => {
   // Shopping Cart - Add product to cart
   const [cartProducts, setCartProducts] = useState([]);
 
+  // Shopping Cart * Order
+  const [order, setOrder] = useState([]);
+
   return (
     <ShoppingCartContext.Provider
       value={{
@@ -37,6 +41,8 @@ const ShoppingCartProvider = ({ children }) => {
         isCheckoutSideMenuOpen,
         openCheckoutSideMenu,
         closeCheckoutSideMenu,
+        order,
+        setOrder,
       }}
     >
       {children}
